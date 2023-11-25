@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#01579B"/>
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Video"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#F1F2F3"
+        android:textStyle="bold"
+        android:textSize="26dp"
+
+        />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/header_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chooseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#01579B"
+        android:padding="10dp"
+        android:text="Choose Video"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Video"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0D7CD5"
+        android:layout_below="@id/chooseBtn"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:drawablePadding="5dp"
+        />
+
+</RelativeLayout>
